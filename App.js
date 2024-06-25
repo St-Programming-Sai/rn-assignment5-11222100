@@ -1,5 +1,3 @@
-// App.js
-
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -12,7 +10,6 @@ import StatisticsPage from './components/Statistics';
 
 const Tab = createBottomTabNavigator();
 
-// Function to get tab bar icon based on route name and focus state
 const getTabBarIcon = (routeName, focused, theme) => {
   let iconImage;
 
@@ -30,7 +27,7 @@ const getTabBarIcon = (routeName, focused, theme) => {
 };
 
 const MyTabs = () => {
-  const { theme } = useTheme(); // Accessing theme from ThemeContext
+  const { theme } = useTheme(); 
 
   return (
     <Tab.Navigator
@@ -43,8 +40,8 @@ const MyTabs = () => {
       },
     })}
     tabBarOptions={{
-      activeTintColor: theme === 'dark' ? 'white' : 'black', // Color of the active tab label/icon
-      inactiveTintColor: 'gray', // Color of the inactive tab label/icon
+      activeTintColor: theme === 'dark' ? 'white' : 'black', 
+      inactiveTintColor: 'gray', 
     }}
     >
       <Tab.Screen name="Home" component={PageOne} options={{ headerShown: false }} />
