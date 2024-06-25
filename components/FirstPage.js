@@ -1,14 +1,13 @@
-// PageOne.js
 import React from 'react';
 import { View, ScrollView, SafeAreaView } from 'react-native';
 import WelcomeSection from './First_Page/WelcomSection';
 import MasterCard from './First_Page/Card';
 import ActionButtonSection from './First_Page/ActionButtons';
 import TransactionSection from './First_Page/Transaction';
-import { useTheme } from './ThemeContext'; // Adjust the import path based on your directory structure
+import { useTheme } from './ThemeContext'; 
 
 export default function PageOne() {
-  const { theme } = useTheme(); // Retrieve theme from context
+  const { theme } = useTheme(); 
 
   return (
     <ScrollView style={{ backgroundColor: theme === 'dark' ? 'black' : 'white' }}>

@@ -1,10 +1,10 @@
 // PageOne.js
 import React from 'react';
 import { View, Text, ScrollView, SafeAreaView } from 'react-native';
-import { useTheme } from './ThemeContext'; // Adjust the import path based on your directory structure
+import { useTheme } from './ThemeContext'; 
 
 export default function StatisticsPage() {
-  const { theme } = useTheme(); // Retrieve theme from context
+  const { theme } = useTheme(); 
 
   return (
     <ScrollView style={{ backgroundColor: theme === 'dark' ? 'black' : 'white' }}>

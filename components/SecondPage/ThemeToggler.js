@@ -1,4 +1,3 @@
-// ThemeToggler.js
 import React, { useState, useEffect } from 'react';
 import { View, Text, Switch } from 'react-native';
 
@@ -10,10 +9,9 @@ export default function ThemeToggler({ mode, toggler }) {
   }, [mode]);
 
   const toggleSwitch = () => {
-    const newTheme = !currentTheme ? 'dark' : 'light'; // Toggle theme
-    setCurrentTheme(newTheme === 'dark'); // Update local state
+    const newTheme = !currentTheme ? 'dark' : 'light'; 
+    setCurrentTheme(newTheme === 'dark'); 
 
-    // Call toggler function passed as prop
     toggler(newTheme);
   };
 
@@ -26,7 +24,7 @@ export default function ThemeToggler({ mode, toggler }) {
         ios_backgroundColor="#3e3e3e"
         onValueChange={toggleSwitch}
         value={currentTheme}
-        style={{ transform: [{ scaleX: 1.5 }, { scaleY: 1.5 }] }} // Example to increase size
+        style={{ transform: [{ scaleX: 1.5 }, { scaleY: 1.5 }] }} 
       />
     </View>
   );
