@@ -1,7 +1,7 @@
 # rn-assignment5-11222100
 
 This is a simple React Native application using `@react-navigation/bottom-tabs` for tab navigation and a custom `ThemeProvider` for theming. The app includes several screens and utilizes local images for tab icons.
-
+      
 ## Screenshots
 
 ## Home Page
